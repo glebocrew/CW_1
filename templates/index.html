@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="{{ url_for('static', filename='styles/global.css') }}" rel="stylesheet">
+
+        <title>Task Manager</title>
+    </head>
+    <style>
+        @font-face {
+            font-family: 'gcode';
+            src: url("{{ url_for('static', filename='fonts/gcode.ttf') }}");
+        }
+    </style>
+
+    <body>
+        <h1 class="home-h1"><span id="violet">import</span> <span id="aqua">task_manager</span></h1>
+        <main class="task_manager">
+            <input class="task_add" name="answer" placeholder="Enter your task...">
+        </main>
+        <button class="add_task" type="submit">manager.<span id="yellow">submit</span>()</button>
+        <main class="tasks">
+            
+        </main>
+    </body>
+    <script src="{{ url_for('static', filename='scripts/task_manager.js') }}">
+        
+    </script>
+</html>

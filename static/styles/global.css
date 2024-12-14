@@ -1,0 +1,168 @@
+*{
+    --background--: rgb(46, 46, 46);
+    --code--: rgb(37, 37, 37);
+    --text--: rgb(255, 255, 255);
+
+    --violet--:  rgb(190, 120, 255);
+    --yellow--: rgb(255, 198, 85);
+    --aqua--:  rgb(126, 255, 212);
+    --green--:  rgb(38, 186, 28);
+
+    font-family: 'gcode';
+}
+
+html, body{
+    position: relative;
+
+    width: 100%; height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background--);
+    color: var(--text--);
+}
+
+.home-h1{
+    position: relative;
+
+    width: 100%;
+    
+    font-size: 4vw;
+    text-align: center;
+} 
+
+
+#violet{
+    color: var(--violet--);
+}
+#yellow{
+    color: var(--yellow--);
+}
+#aqua{
+    color: var(--aqua--);
+}
+#green{
+    color: var(--green--);
+}
+
+/**/
+
+.task_manager{
+    position: relative;
+
+    width: 80%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    margin-left: 10%;
+
+    background-color: var(--code--);
+
+    border-radius: 15px;
+}
+
+.task_add{
+    position: relative;
+
+    width: 100%;
+
+    font-size: 2vw;
+    background-color: var(--code--);
+    color: var(--text--);
+
+    box-shadow: none;
+}
+input {border:0;outline:0;}
+input:focus {outline:none!important;}
+
+.task_add::before{
+    content: ">>>";
+}
+.task_add:-webkit-autofill {
+    -webkit-box-shadow: none;
+    background-color: var(--code--);
+}
+.task_add:-webkit-autofill,
+.task_add:-webkit-autofill:hover, 
+.task_add:-webkit-autofill:focus {
+    font-family: 'gcode';
+}
+
+.task_add:-webkit-autofill,
+.task_add:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+.task_add:focus {
+    outline: none;
+    box-shadow: none;
+    border: var(--text--) 1px;
+    -webkit-caret-width: 2px;
+}
+
+
+.tasks{
+    position: relative;
+
+    width: 80%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    margin-left: 10%;
+    margin-top: 5vw;
+
+    background-color: var(--code--);
+
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+.add_task{
+    position: relative;
+
+    width: 30%;
+    font-size: 2.5vw;
+    background-color: var(--code--);
+    color: var(--violet--);
+
+    margin-left: 35%;
+
+    border: 0;
+
+    padding: 1vw;
+
+    border-radius: 15px;
+    margin-top: 1vw;
+
+    cursor: pointer;
+}
+
+.task{
+    position: relative;
+
+    width: 100%;
+
+    font-size: 2vw;
+    background-color: var(--code--);
+    color: var(--text--);
+
+    box-shadow: none;
+
+    margin-top: 1vw;
+    float: left;
+}
+
+.del-task{
+    position: relative;
+    width: 100%;
+    
+    font-size: 2vw;
+    color: var(--yellow--);
+
+    background-color: var(--background--);
+
+    margin-left: 1vw;
+    
+    cursor: pointer;
+    
+}   
